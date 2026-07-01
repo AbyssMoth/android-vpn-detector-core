@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    VpnDetectorCore AndroidManifest (чистое ядро, без движка).
+    Разрешения:
+    - ACCESS_NETWORK_STATE  обязательно для ConnectivityManager.getNetworkCapabilities().
+    - INTERNET              нужно хост-приложению; продублировано для ясности.
+
+    TRANSPORT_VPN читается из NetworkCapabilities без отдельных прав.
+    Открытие Settings.ACTION_VPN_SETTINGS спец-прав не требует.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

@@ -1,0 +1,22 @@
+plugins {
+    id "com.android.library"
+}
+
+android {
+    namespace "com.abyssmoth.vpndetector.core"
+    compileSdk 36
+
+    defaultConfig {
+        minSdk 23
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+// Чистое ядро: НИКАКИХ зависимостей от игрового движка (только Android SDK).
+dependencies {
+}
