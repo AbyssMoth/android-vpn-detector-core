@@ -1,5 +1,7 @@
 # android-vpn-detector-core
 
+Текущая версия: `1.0.1`.
+
 Чистое Android-ядро для определения **VPN** и **наличия интернета**, без зависимостей от
 игрового движка. Только Android SDK. Одно ядро переиспользуется разными движками через
 тонкие обвязки: Godot (`godot-vpn-detector`, подключает это ядро как submodule) и, при
@@ -53,8 +55,8 @@ boolean opened = core.openVpnSettings(activity); // открыть систем�
 # AAR: vpndetectorcore/build/outputs/aar/vpndetectorcore-release.aar
 ```
 
-Требования: Android SDK, JDK 17-22 (Gradle 8.14.x не поддерживает JDK 25), AGP 8.13.0,
-compileSdk 36, minSdk 23.
+Требования: Android SDK, JDK 17-22, AGP 8.13.0, Gradle wrapper 8.13,
+compileSdk 36, minSdk 23. Сборка запускается через `./gradlew`.
 
 ## Использование в Godot
 
